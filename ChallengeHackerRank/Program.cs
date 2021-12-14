@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            DrawingBook.Initial(args);
+            BitwiseAnd.Initial(args);
         }
 
     }

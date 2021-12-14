@@ -25,12 +25,11 @@ namespace ChallengeHackerRank
         public static int pageCount(int n, int p)
         {
 
-            var left_to_right_flips = p / 2;
-            var right_to_left_flips = n / 2 - p / 2;
+            var totalPageTurnCounFromFront = n / 2;
+            var targetPageTurnCountFromFront = p / 2;
+            var targetPageTurnCountFromBack = totalPageTurnCounFromFront - targetPageTurnCountFromFront;
 
-            return left_to_right_flips < right_to_left_flips 
-                ? left_to_right_flips 
-                : right_to_left_flips;
+            return Math.Min(targetPageTurnCountFromFront, targetPageTurnCountFromBack);
 
         }
 
