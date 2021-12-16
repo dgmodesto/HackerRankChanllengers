@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            MagicSquareForming.Initial(args);
+            PickingNumbers.Initial(args);
         }
 
     }
