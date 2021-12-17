@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            PickingNumbers.Initial(args);
+            HurdleRace.Initial(args);
         }
 
     }
