@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            AVeryBigSum.Initial(args);
+            DesignerPdfViewer.Initial(args);
         }
 
     }
