@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            DesignerPdfViewer.Initial(args);
+            AngryProfessor.Initial(args);
         }
 
     }

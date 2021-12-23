@@ -17,14 +17,12 @@ namespace ChallengeHackerRank
 
         public static int utopianTree(int n)
         {
-            int result = 0;
-
-
-
-            return result;
+            int subtract = 1 + (n % 2);
+            int exponent = ((n + (n % 2)) / 2) + 1;
+            return (int)Math.Pow(2, exponent) - subtract;
         }
 
-        public static void Main(string[] args)
+        public static void Initial(string[] args)
         {
             int t = Convert.ToInt32(Console.ReadLine().Trim());
 
