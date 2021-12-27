@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            AngryProfessor.Initial(args);
+            EmplyeesManagement.Initial(args);
         }
 
     }

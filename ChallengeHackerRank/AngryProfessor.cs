@@ -27,10 +27,10 @@ namespace ChallengeHackerRank
 					qtd++;
 			}
 
-			if (qtd <= k)
-				return "NO";
-			else
+			if (qtd < k)
 				return "YES";
+			else
+				return "NO";
 
 		}
 
