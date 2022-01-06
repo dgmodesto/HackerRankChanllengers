@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            ProblemSolvingBasicMaximumCostOfLaptopCount.Initial(args);
+            DictionariesAndHashMaps.Initial(args);
         }
 
     }
