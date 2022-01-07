@@ -44,17 +44,16 @@ namespace ChallengeHackerRank
                     }
                 } else
                 {
-                    if (num <= maxFr && hash.ContainsKey(num)) retList.Add(1);
+                    if (num <= maxFr && hash.ContainsValue(num)) retList.Add(1);
                     else retList.Add(0);
                 }
             }
+            return retList;
 
 
 
 
-
-
-
+            // O método abaixoo funciona porém tem baixa performance. Testa de alta carga de dados demora para executar.
 
 
             //for (int i = 0; i < queries.Count; i++)
@@ -101,7 +100,7 @@ namespace ChallengeHackerRank
             //    }
             //}
 
-            return retList;
+            //return retList;
 
         }
 
