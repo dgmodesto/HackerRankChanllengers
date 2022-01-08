@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            SortingMarkAndToys.Initial(args);
+            MicrosoftCaseThree.Initial(args);
         }
 
     }
