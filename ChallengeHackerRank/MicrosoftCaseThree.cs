@@ -25,6 +25,9 @@ namespace ChallengeHackerRank
 
                     if (Array.Exists(B, x => x == A[i]))
                     {
+                        if (alreadVerify.Contains(A[i]))
+                            continue;
+
                         count++;
                         alreadVerify.Add(A[i]);
                     }
