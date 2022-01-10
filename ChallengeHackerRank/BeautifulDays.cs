@@ -24,8 +24,13 @@ namespace ChallengeHackerRank
             for(int x = i; x <= j; x++)
             {
                 var inverseValue = new String(x.ToString().Reverse().ToArray());
+                
+                //Those 3 lines below is 10x quicker than line above in a big enter.
+                var newString = x.ToString().ToCharArray();
+                Array.Reverse(newString);
+                var inverseValueQuicly = new String(newString);
 
-                var value = x - Convert.ToInt64(inverseValue);
+                var value = x - Convert.ToInt64(inverseValueQuicly);
                 
                 if(value % k == 0)
                 {
