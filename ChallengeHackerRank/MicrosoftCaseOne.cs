@@ -18,8 +18,8 @@ namespace ChallengeHackerRank
             for (int i = 0; i < S.Length; i++)
             {
 
-                if (i == 1)
-                    before = S[i - 1].ToString();
+                //if (i == 1)
+                //    before = S[i - 1].ToString();
 
 
                 var current = S[i].ToString();

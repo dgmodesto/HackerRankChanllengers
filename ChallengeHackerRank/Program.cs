@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            BeautifulDays.Initial(args);
+            ViralAdvertising.Initial(args);
         }
 
     }
