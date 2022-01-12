@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            SaveThePrisoner.Initial(args);
+            CircularArrayRotation.Initial(args);
         }
 
     }

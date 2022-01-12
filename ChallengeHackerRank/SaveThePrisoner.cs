@@ -22,8 +22,8 @@ namespace ChallengeHackerRank
 
         public static int saveThePrisoner(int n, int m, int s)
         {
-            //Input: 
-            /*
+            /*Input: 
+          
 1
 4 6 2
             */
