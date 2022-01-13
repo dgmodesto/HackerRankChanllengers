@@ -33,10 +33,20 @@ Output
 
         public static List<int> circularArrayRotation(List<int> a, int k, List<int> queries)
         {
+            var result = new List<int>();
+            for (int i =0; i < k; i++)
+            {
+                int last = a[a.Count- 1];
+                a.Insert(0, last);
+                a.RemoveAt(a.Count - 1);
+            }
 
+            for(int i = 0; i < queries.Count; i++)
+            {
+                result.Add(a[queries[i]]);
+            }
 
-
-            return new List<int>();
+            return result;
         }
 
         public static void Initial(string[] args)

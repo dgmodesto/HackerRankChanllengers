@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            CircularArrayRotation.Initial(args);
+            PermutationEquation.Initial(args);
         }
 
     }
