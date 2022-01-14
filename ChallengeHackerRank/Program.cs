@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            PermutationEquation.Initial(args);
+            JumpingCloudRevisited.Initial(args);
         }
 
     }
