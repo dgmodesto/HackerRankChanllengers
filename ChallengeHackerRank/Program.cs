@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            FindDigits.Initial(args);
+            ExtraLongFactorials.Initial(args);
         }
 
     }
