@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            SharlockAndSquares.Initial(args);
+            LibraryFine.Initial(args);
         }
 
     }
