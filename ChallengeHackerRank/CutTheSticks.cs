@@ -19,10 +19,8 @@ namespace ChallengeHackerRank
         public static List<int> cutTheSticks(List<int> arr)
         {
             var result = new List<int>();
-            int totalSticks = arr.Count;
-            result.Add(totalSticks);
-
-            for (int i = 0; i < arr.Count; i++)
+            result.Add(arr.Count);
+            while(arr.Where(x => x > arr.Min()).Count() != 0)
             {
                 var min = arr.Min();
                 var baseCase = arr.Where(x => x > min).Count();
@@ -39,9 +37,7 @@ namespace ChallengeHackerRank
                         j--;
                     }
                 }
-                totalSticks = arr.Count;
-                result.Add(totalSticks);
-                i = 0;
+                result.Add(arr.Count);
             }
 
 

@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            CutTheSticks.Initial(args);
+            NonDivisbleSubSet.Initial(args);
         }
 
     }
