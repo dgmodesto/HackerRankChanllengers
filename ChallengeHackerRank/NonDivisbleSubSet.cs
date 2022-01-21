@@ -24,7 +24,7 @@ namespace ChallengeHackerRank
         {
             int result = 0;
 
-            var remainderArr = new int[s.Count];
+            var remainderArr = new int[1000];
 
 
             for (int i = 0; i < s.Count; i++)

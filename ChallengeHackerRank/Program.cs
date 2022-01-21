@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            NonDivisbleSubSet.Initial(args);
+            EqualityInAArray.Initial(args);
         }
 
     }
