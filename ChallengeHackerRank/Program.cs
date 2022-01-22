@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            EqualityInAArray.Initial(args);
+            ChocolateFeast.Initial(args);
         }
 
     }
