@@ -26,10 +26,23 @@ namespace ChallengeHackerRank
 
         public static List<int> serviceLane(int n, List<List<int>> cases, List<int> width)
         {
+            var result = new List<int>();
 
+            for(int i =0; i < cases.Count; i++)
+            {
+                var currentCase = cases[i];
 
+                
+                int minNumber = int.MaxValue;
+                for (int j = currentCase[0]; j <= currentCase[1]; j++)
+                {
+                    if (width[j] < minNumber)
+                        minNumber = width[j];
+                }
+                result.Add(minNumber);
+            }
 
-            return null;
+            return result;
         }
 
         public static void Initial(string[] args)
