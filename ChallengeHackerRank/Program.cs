@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            LisasWorkbook.Initial(args);
+            FlatnandSpaceStations.Initial(args);
         }
 
     }
