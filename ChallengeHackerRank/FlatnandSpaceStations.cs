@@ -21,7 +21,8 @@ namespace ChallengeHackerRank
         Explanation: 
             Sort the array in incresing order. 
             1.  Take the maximum distance from the starting city (0) and 
-                from the last city from the nearest station. Also eliminate the case of only 1 staion. 
+                from the last city from the nearest station. 
+                Also eliminate the case of only 1 staion. 
             2. Now take the maximum distance from the given station to any city 
                using formula (a[i+1]-a[i])/2. Just draw the diagrams and you will get the formula. 
             3. The maximum value of distance is the answer.

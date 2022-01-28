@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            FlatnandSpaceStations.Initial(args);
+            FairRotations.Initial(args);
         }
 
     }
