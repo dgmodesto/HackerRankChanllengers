@@ -45,7 +45,7 @@ namespace ChallengeHackerRank
                 }
 
             }
-
+                
             var allEven = B.Where(x => x % 2 != 0).Count() ;
 
             return allEven == 0 ? result.ToString() : "NO" ;
