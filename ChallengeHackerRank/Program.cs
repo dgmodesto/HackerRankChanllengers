@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            CavityMap.Initial(args);
+            AppendAndDelete.Initial(args);
         }
 
     }
