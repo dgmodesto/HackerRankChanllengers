@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            AppendAndDelete.Initial(args);
+            ManasaAndStones.Initial(args);
         }
 
     }
