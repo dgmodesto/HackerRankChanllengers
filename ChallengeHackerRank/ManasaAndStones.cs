@@ -20,6 +20,32 @@ namespace ChallengeHackerRank
      *  
      *  Here is the gist: Compute the difference between a and b, start a while loop at lowest possible answer; a * n-1. 
      *  Then add difference to this value & string. Then iterate until value = maxium output of b * n-1.
+     *  
+STDIN   Function
+-----   --------
+2       T = 2 (test cases)
+3       n = 3 (test case 1)
+1       a = 1
+2       b = 2
+4       n = 4 (test case 2)
+10      a = 10
+100     b = 100
+
+Sample Output
+
+2 3 4 
+30 120 210 300 
+
+
+1
+3
+1
+2
+
+1
+4
+10
+100
      */
 
         public static List<int> stones(int n, int a, int b)
@@ -28,7 +54,7 @@ namespace ChallengeHackerRank
 
             var aMin = Math.Min(a, b);
             var bMax = Math.Max(a, b);
-            var stones = n--;
+            var stones = --n;
 
             var current = aMin * stones;
             var max = bMax * stones;
