@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            FraudulentActivityNotifications.Initial(args);
+            TaumAndBday.Initial(args);
         }
 
     }
