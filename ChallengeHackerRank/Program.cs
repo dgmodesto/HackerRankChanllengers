@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            TaumAndBday.Initial(args);
+            AcmICpcTeam.Initial(args);
         }
 
     }
