@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            BitwiseAnd.Initial(args);
+            KaprekarNumbers.Initial(args);
         }
 
     }
