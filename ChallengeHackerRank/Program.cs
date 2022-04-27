@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            FindMergeNode.Initial(args);
+            SortedDoublyLinkedList.Initial(args);
 
         }
 
