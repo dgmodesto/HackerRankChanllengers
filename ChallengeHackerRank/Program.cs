@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            SortedDoublyLinkedList.Initial(args);
+            ReverseDoublyLinkedList.Initial(args);
 
         }
 

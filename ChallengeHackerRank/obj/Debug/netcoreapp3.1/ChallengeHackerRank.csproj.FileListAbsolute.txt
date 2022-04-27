@@ -24,11 +24,12 @@ C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcorea
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.dll
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.pdb
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.genruntimeconfig.cache
-C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.dll
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.exe
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.deps.json
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.runtimeconfig.json
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.runtimeconfig.dev.json
+C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.dll
+C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.pdb
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.csproj.AssemblyReference.cache
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.GeneratedMSBuildEditorConfig.editorconfig
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.AssemblyInfoInputs.cache
@@ -37,4 +38,3 @@ C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\Chall
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.dll
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.pdb
 C:\labs\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.genruntimeconfig.cache
-C:\labs\HackerRankChanllengers\ChallengeHackerRank\bin\Debug\netcoreapp3.1\ChallengeHackerRank.pdb

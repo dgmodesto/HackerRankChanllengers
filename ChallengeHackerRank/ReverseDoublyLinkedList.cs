@@ -4,8 +4,23 @@ using System.Text;
 
 namespace ChallengeHackerRank
 {
-    public static class SortedDoublyLinkedList
+    /*
+     https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+     
+INPUT
+1
+4
+1
+2
+3
+4
+OUTPUT
+4 3 2 1 
+     
+     */
+    public static class ReverseDoublyLinkedList
     {
+
         class DoublyLinkedListNode
         {
             public int data;
@@ -64,49 +79,30 @@ namespace ChallengeHackerRank
             }
         }
 
-        static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode llist, int data)
+        static DoublyLinkedListNode reverse(DoublyLinkedListNode llist)
         {
-            DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
-            if (llist.data > data)
+            DoublyLinkedListNode temp = llist;
+            DoublyLinkedListNode newHead = llist;
+
+            while (temp != null)
             {
-                newNode.next = llist;
-                newNode.prev = llist.prev;
-
-                if(newNode.prev != null)
-                    newNode.prev.next = newNode;
-
-                llist.prev = newNode;
-
-                return newNode;
-
+                DoublyLinkedListNode prev = temp.prev;
+                temp.prev = temp.next;
+                temp.next = prev;
+                newHead = temp;
+                temp = temp.prev;
             }
-            else if (llist.next == null)
-            {
-                newNode.prev = llist;
-                llist.next = newNode;
-            }
-            else
-            {
-                sortedInsert(llist.next, data);
-            }
-
-            return llist;
+            return newHead;
         }
-
         /*
-INPUT
-1
-4
-1
-3
-4
-10
-5
-OUTPUT
-1 3 4 5 10
-         
-         */
+        1, 2, 3, 4, 5 - null
 
+            auxPrev = 5
+            curr = 4
+            curr.prev = auxPrev
+            return curr;
+
+        */
         public static void Initial(string[] args)
         {
             int t = Convert.ToInt32(Console.ReadLine());
@@ -123,10 +119,7 @@ OUTPUT
                     llist.InsertNode(llistItem);
                 }
 
-                int data = Convert.ToInt32(Console.ReadLine());
-
-                DoublyLinkedListNode llist1 = sortedInsert(llist.head, data);
-
+                DoublyLinkedListNode llist1 = reverse(llist.head);
 
                 PrintDoublyLinkedList(llist1, " ");
                 Console.WriteLine();
