@@ -247,11 +247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\labs\\dotnetcore\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
+      "projectUniqueName": "C:\\labs\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
       "projectName": "ChallengeHackerRank",
-      "projectPath": "C:\\labs\\dotnetcore\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
+      "projectPath": "C:\\labs\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
       "packagesPath": "C:\\Users\\dgmodesto\\.nuget\\packages\\",
-      "outputPath": "C:\\labs\\dotnetcore\\HackerRankChanllengers\\ChallengeHackerRank\\obj\\",
+      "outputPath": "C:\\labs\\HackerRankChanllengers\\ChallengeHackerRank\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
