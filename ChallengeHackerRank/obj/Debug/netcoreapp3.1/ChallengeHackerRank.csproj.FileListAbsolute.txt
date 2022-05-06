@@ -24,3 +24,4 @@ C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcorea
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.dll
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.pdb
 C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.genruntimeconfig.cache
+C:\labs\dotnetcore\HackerRankChanllengers\ChallengeHackerRank\obj\Debug\netcoreapp3.1\ChallengeHackerRank.GeneratedMSBuildEditorConfig.editorconfig
