@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            FirstAndLastTarget.Initial(args);
+            KthLargestElement.Initial(args);
         }
 
     }
