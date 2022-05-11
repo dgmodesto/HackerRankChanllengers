@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            FindFirstUniqueCharacterInString.Initial(args);
+            IntersetStrings.Initial(args);
 
         }
 
