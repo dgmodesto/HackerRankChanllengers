@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k+inXgH9UDJmVRmpA1kyJtLDji9utg+4+vMRYFd8HE2SF3fHSaasRyiLuCmjosMovdO2jkHR6Ukyxgrs+VQaHw==",
+  "dgSpecHash": "b/ZhkHtcOUXSPgCw2QlWD2kmukFRZ/f4azCqiVc/A/uLQbYMoX+XIXIIV+fSLu6vk0OZZSVTNLR9+6VL1Jvseg==",
   "success": true,
-  "projectFilePath": "C:\\labs\\dotnetcore\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
+  "projectFilePath": "C:\\labs\\HackerRankChanllengers\\ChallengeHackerRank\\ChallengeHackerRank.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dgmodesto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\dgmodesto\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
