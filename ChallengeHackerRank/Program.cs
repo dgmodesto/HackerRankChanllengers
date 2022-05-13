@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            IntersetStrings.Initial(args);
+            ContainsDuplicateII.Initial(args);
 
         }
 
