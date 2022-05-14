@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            ContainsDuplicateII.Initial(args);
+            BinaryTreeSymetric.Initial(args);
 
         }
 
