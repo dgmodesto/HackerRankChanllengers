@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            MinimumAbsoluteDifference.Initial(args);
+            GreedyAlgorithms.Initial(args);
 
         }
 
