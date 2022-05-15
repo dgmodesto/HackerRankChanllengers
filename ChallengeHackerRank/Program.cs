@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            GreedyAlgorithms.Initial(args);
+            ValidSudoku.Initial(args);
 
         }
 
