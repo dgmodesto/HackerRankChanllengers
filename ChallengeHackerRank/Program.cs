@@ -13,7 +13,7 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            ValidSudoku.Initial(args);
+            Tree.Tree.Initial(args);
 
         }
 
