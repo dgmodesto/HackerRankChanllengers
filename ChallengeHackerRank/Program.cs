@@ -13,7 +13,8 @@ namespace ChallengeHackerRank
         static void Main(string[] args)
         {
 
-            Tree.Tree.Initial(args);
+            //Tree.Tree.Initial(args);
+            MaxMinSub.Initial(args);
 
         }
 
