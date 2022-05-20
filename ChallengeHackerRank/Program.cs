@@ -14,7 +14,7 @@ namespace ChallengeHackerRank
         {
 
             //Tree.Tree.Initial(args);
-            MaxMinSub.Initial(args);
+            FibonacciSequence.Initial(args);
 
         }
 
