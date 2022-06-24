@@ -1,19 +1,15 @@
-﻿using ChallengeHackerRank.AwsChallenges;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using ChallengeHackerRank.DataStructure;
 
 namespace ChallengeHackerRank
 {
-    class Program
+  class Program
     {
         // Complete the miniMaxSum function below.
       
         static void Main(string[] args)
         {
-            FirstDuplicate.Initial(args);
+            Arrays.Initial(args);
         }
-
+        
     }
 }
