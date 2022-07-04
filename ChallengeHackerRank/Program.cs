@@ -8,7 +8,7 @@ namespace ChallengeHackerRank
       
         static void Main(string[] args)
         {
-            Arrays.Initial(args);
+            TreeSample.Initial(args);
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
