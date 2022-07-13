@@ -15,7 +15,7 @@ namespace ChallengeHackerRank
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
-            LengthOfLongestSubstring.Initial(args);
+            MinimumDistances.Initial(args);
 
         }
 
