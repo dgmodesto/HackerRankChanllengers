@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
-            TimeConversion.Initial(args);
+            StringMakingAnagram.Initial(args);
 
             // LengthOfLongestSubstring.Initial(args);
 
