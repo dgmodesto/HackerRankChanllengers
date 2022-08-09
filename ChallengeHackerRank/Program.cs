@@ -12,7 +12,7 @@ namespace ChallengeHackerRank
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
-            SherlockValidString.Initial(args);
+            IntegerLonely.Initial(args);
 
             // LengthOfLongestSubstring.Initial(args);
 
