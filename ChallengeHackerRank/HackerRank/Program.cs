@@ -1,4 +1,5 @@
-﻿using ChallengeHackerRank.DataStructure;
+﻿using ChallengeHackerRank.AlgoExpert;
+using ChallengeHackerRank.DataStructure;
 
 namespace ChallengeHackerRank
 {
@@ -12,7 +13,7 @@ namespace ChallengeHackerRank
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
-            HalloweenSale.Initial(args);
+            TwoNumbarSum.Initial(args);
 
             // LengthOfLongestSubstring.Initial(args);
 

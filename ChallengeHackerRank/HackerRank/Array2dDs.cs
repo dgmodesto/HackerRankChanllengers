@@ -113,7 +113,6 @@ Sample Output
             }
 
             int result = HourglassSum(arr);
-
             Console.WriteLine(result);
         }
 
