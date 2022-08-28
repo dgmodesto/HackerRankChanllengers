@@ -50,7 +50,7 @@ OUTPUT
             return result;
         }
 
-        public static List<int[]> ThreeNumberSum(int[] array, int targetSum)
+        public static List<int[]> ThreeNumberSum2(int[] array, int targetSum)
         {
             // Write your code here.
             // complexity O(n^2) | space O(1)
