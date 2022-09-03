@@ -86,6 +86,42 @@ namespace ChallengeHackerRank.AlgoExpert
 			}
 		}
 
+		public class NodeDFS3
+		{
+			public string name;
+			public List<NodeDFS3> children = new List<NodeDFS3>();
+
+			public NodeDFS3(string name)
+			{
+				this.name = name;
+			}
+
+			public List<string> DepthFirstSearch(List<string> array)
+			{
+				// Write your code here.
+				Stack<NodeDFS3> nodeStack = new Stack<NodeDFS3>();
+				nodeStack.Push(this);
+
+				while (nodeStack.Count > 0)
+				{
+					var currNode = nodeStack.Pop();
+					array.Add(currNode.name);
+					for (int i = currNode.children.Count - 1; i >= 0; i--)
+					{
+						nodeStack.Push(currNode.children[i]);
+					}
+				}
+				return array;
+			}
+
+			public NodeDFS3 AddChild(string name)
+			{
+				NodeDFS3 child = new NodeDFS3(name);
+				children.Add(child);
+				return this;
+			}
+		}
+
 		public static void Initial(string [] args )
         {
 			NodeDFS1 graph = new NodeDFS1("A");
