@@ -13,9 +13,9 @@ namespace ChallengeHackerRank
 
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
-            DepthFirstSearch.Initial(args);
+            //DepthFirstSearch.Initial(args);
 
-            // LengthOfLongestSubstring.Initial(args);
+            MinimumWaitingTime.Initial(args);
 
 
         }
