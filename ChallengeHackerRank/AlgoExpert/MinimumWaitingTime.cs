@@ -32,16 +32,16 @@ namespace ChallengeHackerRank.AlgoExpert
         private static int MinimumWaitingTimeMethod2(int[] queries)
         {
             /*
-   Array.Lenght = al = 5
-   index = idx = 0
-       al   idx  formula
-   1    5    0   ((5 - 1 - 0) * 1) + 00 = 4
-   2    5    1   ((5 - 1 - 1) * 2) + 04 = 10
-   2    5    2   ((5 - 1 - 2) * 2) + 10 = 14
-   3    5    1   ((5 - 1 - 3) * 3) + 14 = 17
-   6    - don't execute the last line   
-*/
-            // Write your code here.
+               Array.Lenght = al = 5
+               index = idx = 0
+              val  al   idx  formula
+               1    5    0   ((5 - 1 - 0) * 1) + 00 = 4
+               2    5    1   ((5 - 1 - 1) * 2) + 04 = 10
+               2    5    2   ((5 - 1 - 2) * 2) + 10 = 14
+               3    5    3   ((5 - 1 - 3) * 3) + 14 = 17
+               6    5    4   - don't execute the last line   
+            */
+
             Array.Sort(queries);
             int amount = 0;
 
