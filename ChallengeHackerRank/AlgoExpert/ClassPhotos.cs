@@ -77,6 +77,28 @@ namespace ChallengeHackerRank.AlgoExpert
             return true;
         }
 
+        public static bool ClassPhotos3(List<int> redShirtHeights, List<int> blueShirtHeights)
+        {
+            // Write your code here.
+            redShirtHeights.Sort();
+            blueShirtHeights.Sort();
+
+            var isTallestBlue = blueShirtHeights.Last() > redShirtHeights.Last();
+
+            for (int i = 0; i < blueShirtHeights.Count; i++)
+            {
+
+                if (isTallestBlue && blueShirtHeights[i] <= redShirtHeights[i])
+                    return false;
+
+
+                if (!isTallestBlue && redShirtHeights[i] <= blueShirtHeights[i])
+                    return false;
+            }
+
+            return true;
+        }
+
         public static void Initial(string [] args)
         {
             int[] blueShirtHeights = new int[] { 5, 4 };
