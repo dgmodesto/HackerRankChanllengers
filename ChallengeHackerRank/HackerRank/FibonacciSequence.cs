@@ -16,7 +16,7 @@ Sample Input
 Sample Output
 8
          */
-        public static int Fibonacci(int n)
+        public static int Fibonacci1(int n)
         {
 
             // Write your code here.
@@ -26,15 +26,67 @@ Sample Output
             else if (n == 1)
                 return 1;
 
-            res = Fibonacci(n - 1) + Fibonacci(n - 2);
+            res = Fibonacci1(n - 1) + Fibonacci1(n - 2);
             return res;
 
         }
 
-        public static void Initial(string [] args)
+        public static int Fibonacci2(int n)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Fibonacci(n));    
+            if (n == 0) return 0;
+            else if (n == 10) return 1;
+
+            int[] memo = new int[n];
+            memo[0] = 0;
+            memo[1] = 1;
+
+            for (int i = 2; i < n; i++)
+            {
+                memo[i] = memo[i - 1] + memo[i - 2];
+            }
+            return memo[n - 1] + memo[n - 2];
+        }
+
+
+        public static int Fibonacci3(int n)
+        {
+            if(n==0) return 0;
+            int a = 0;
+            int b = 1;
+            for(int i = 2; i < n; i++)
+            {
+                int c = a + b;
+                a = b;
+                b = c;
+            }
+
+            return a + b;
+        }
+
+        public static int Fibonacci4(int n)
+        {
+            return FibonacciAux(n, new int[n + 1]);
+        }
+
+        private static int FibonacciAux(int i, int[] memo)
+        {
+            if (i == 0 || i == 1) return i;
+
+            if (memo[i] == 0)
+            {
+                memo[i] = FibonacciAux(i - 1, memo) + FibonacciAux(i - 2, memo);
+            }
+
+            return memo[i];
+        }
+
+        public static void Initial(string[] args)
+        {
+            int result = Fibonacci1(6);
+
+            Console.WriteLine("Expected: 8");
+            Console.WriteLine($"Actual: { result }");
+
         }
     }
 }
