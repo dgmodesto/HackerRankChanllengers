@@ -15,7 +15,7 @@ namespace ChallengeHackerRank
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
 
-            FibonacciSequence.Initial(args);
+            LongestPeak.Initial(args);
 
 
         }
