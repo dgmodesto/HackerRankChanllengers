@@ -15,7 +15,7 @@ namespace ChallengeHackerRank
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
 
-            ArrayOfProducts.Initial(args);
+            ProductSum.Initial(args);
 
 
         }
