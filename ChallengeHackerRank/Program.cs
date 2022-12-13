@@ -1,5 +1,7 @@
 ﻿using ChallengeHackerRank.AlgoExpert;
 using ChallengeHackerRank.DataStructure;
+using ChallengeHackerRank.Graphs;
+using ChallengeHackerRank.UberChallenge;
 
 namespace ChallengeHackerRank
 {
@@ -15,7 +17,7 @@ namespace ChallengeHackerRank
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
 
-            ProductSum.Initial(args);
+            InsertionSort.Initial(args);
 
 
         }
