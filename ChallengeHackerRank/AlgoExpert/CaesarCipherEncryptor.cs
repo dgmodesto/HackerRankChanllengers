@@ -26,6 +26,8 @@ namespace ChallengeHackerRank.AlgoExpert
             // Write your code here.
 
             char[] letters = new char[str.Length];
+
+            //ASCII doce of a - the first symbol
             int aPos = 'a';
             for (int i = 0; i < str.Length; i++)
             {
