@@ -17,7 +17,7 @@ namespace ChallengeHackerRank
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
 
-            RunLengthEncoding.Initial(args);
+            GenerateDocument.Initial(args);
 
 
         }
