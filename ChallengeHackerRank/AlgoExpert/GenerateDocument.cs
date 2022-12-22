@@ -80,6 +80,21 @@ namespace ChallengeHackerRank.AlgoExpert
             return true;
         }
 
+        public static bool GenerateDocument3(string characters, string document)
+        {
+            // Complexity O(N) | Space O(1)
+
+            foreach (char c in document)
+            {
+                if (characters.IndexOf(c) == -1)
+                    return false;
+
+                characters = characters.Remove(characters.IndexOf(c), 1);
+            }
+
+            return true;
+        }
+
         public static void Initial(string [] args)
         {
             string characters = "Bste!hetsi ogEAxpelrt x ";
