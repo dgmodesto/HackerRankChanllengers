@@ -85,9 +85,9 @@ namespace ChallengeHackerRank.AlgoExpert
                         this.left = this.left.left;
                     } else
                     {
-                        var sucessor = FindMinValue(this.right);
-                        this.value = sucessor;
-                        this.right = this.right.Remove(sucessor);
+                        var sucessor = FindInOderSucessor(this.right);
+                        this.value = sucessor.value;
+                        this.right = this.right.Remove(sucessor.value);
                     }
                 }
 
@@ -95,17 +95,32 @@ namespace ChallengeHackerRank.AlgoExpert
                 return this;
             }
 
-            private int FindMinValue(BST node)
+            public bool ValidateBst()
             {
-                var minValue = node.value;
+                return ValidateBstHelper(this, int.MinValue, int.MaxValue);
+            }
 
-                while(node.left != null)
+            private bool ValidateBstHelper(BST tree, int minValue, int maxValue)
+            {
+                if (tree == null) return true; 
+                if( tree.value < minValue || tree.value >= maxValue) return false;
+
+                var leftResult = ValidateBstHelper(tree.left, minValue, tree.value);
+                var rightResult = ValidateBstHelper(tree.right, tree.value, maxValue);
+
+                return leftResult && rightResult;
+            }
+
+            private BST FindInOderSucessor(BST node)
+            {
+                var current = node;
+
+                while(current.left != null)
                 {
-                    minValue = node.left.value;
-                    node = node.left;
+                    current = current.left;
                 }
 
-                return minValue;
+                return current;
             }
         }
 
@@ -124,20 +139,32 @@ namespace ChallengeHackerRank.AlgoExpert
             root.right.left.right = new BST(14);
             root.right.right = new BST(22);
 
+
+
+
             root.Insert(12);
             Console.WriteLine($"Expected: True");
             Console.WriteLine($"Result: { root.right.left.left.value == 12 }");
+            Console.WriteLine($"-------------------------------------------");
 
             root.Remove(10);
             Console.WriteLine($"Expected: True");
             Console.WriteLine($"Result: { root.Contains(10) == false}");
+            Console.WriteLine($"-------------------------------------------");
 
             Console.WriteLine($"Expected: False");
             Console.WriteLine($"Result: { root.value == 12}");
+            Console.WriteLine($"-------------------------------------------");
 
 
             Console.WriteLine($"Expected: True");
             Console.WriteLine($"Result: { root.Contains(15)}");
+            Console.WriteLine($"-------------------------------------------");
+
+            Console.WriteLine($"Expected: True");
+            Console.WriteLine($"Result: { root.ValidateBst()}");
+            Console.WriteLine($"-------------------------------------------");
+
 
         }
     }
