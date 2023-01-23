@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ChallengeHackerRank.AlgoExpert
 {
-    public static class BinarySearchTree
+  public static class BinarySearchTree
     {
 
         public class BST
@@ -111,6 +110,35 @@ namespace ChallengeHackerRank.AlgoExpert
                 return leftResult && rightResult;
             }
 
+            public BST MinHeightBst(List<int> array) {
+                return ConstructMinHeightBst(array,  0, array.Count-1);
+            }
+
+            private BST ConstructMinHeightBst(List<int> array,  int startIdx, int endIdx)
+            {
+                if(startIdx > endIdx)
+                    return null;
+                int midIdx = (startIdx + endIdx) / 2;
+
+                var bst = new BST(array[midIdx]);
+                bst.left = ConstructMinHeightBst(array, startIdx, midIdx-1);
+                bst.right = ConstructMinHeightBst(array, midIdx+1, endIdx);
+                
+                return bst;
+            }
+
+            public int GetTreeHeight() {
+                return GetTreeHeight(this, 0);
+            }
+
+            public int GetTreeHeight(BST tree, int height) {
+                if (tree == null) return height;
+
+                int leftTreeHeight = GetTreeHeight(tree.left, height + 1);
+                int rightTreeHeight = GetTreeHeight(tree.right, height + 1);
+                return Math.Max(leftTreeHeight, rightTreeHeight);
+            }
+
             private BST FindInOderSucessor(BST node)
             {
                 var current = node;
@@ -123,7 +151,6 @@ namespace ChallengeHackerRank.AlgoExpert
                 return current;
             }
         }
-
 
 
 
@@ -157,14 +184,25 @@ namespace ChallengeHackerRank.AlgoExpert
             Console.WriteLine($"-------------------------------------------");
 
 
-            Console.WriteLine($"Expected: True");
+           Console.WriteLine($"Expected: True");
             Console.WriteLine($"Result: { root.Contains(15)}");
-            Console.WriteLine($"-------------------------------------------");
+            Console.WriteLine($"-------------------------------------------"); 
 
             Console.WriteLine($"Expected: True");
             Console.WriteLine($"Result: { root.ValidateBst()}");
             Console.WriteLine($"-------------------------------------------");
 
+
+            var array = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22};
+            var tree = root.MinHeightBst(array);
+
+            Console.WriteLine($"Expected: True");
+            Console.WriteLine($"Result: { tree.ValidateBst()}");
+            Console.WriteLine($"-------------------------------------------");
+
+            Console.WriteLine($"Expected: 4");
+            Console.WriteLine($"Result: { tree.GetTreeHeight()}");
+            Console.WriteLine($"-------------------------------------------");
 
         }
     }
