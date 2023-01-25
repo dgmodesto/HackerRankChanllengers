@@ -338,6 +338,35 @@ namespace ChallengeHackerRank.AlgoExpert
             }
 
 
+            public static int FindKthLargestValueInBstIterative(BST tree, int k)
+            {
+                // Complexity O(N) | Space O(N)
+                int count = 1;
+                var stack = new Stack<BST>();
+                var curr = tree;
+
+                while (stack.Count > 0 || tree != null)
+                {
+                    if (curr != null)
+                    {
+                        stack.Push(curr);
+                        curr = curr.right;
+                    }
+                    else
+                    {
+                        curr = stack.Pop();
+                        if (count == k)
+                        {
+                            return curr.value;
+                        }
+                        count += 1;
+                        curr = curr.left;
+                    }
+                }
+
+                return curr.value;
+            }
+
         }
 
 
