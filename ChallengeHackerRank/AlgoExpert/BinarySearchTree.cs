@@ -153,6 +153,16 @@ namespace ChallengeHackerRank.AlgoExpert
                 return current;
             }
         }
+        public class TreeInfo
+        {
+            public int numberOfNodeVisited { get; set; }
+            public int lastetVisitedNodeValue { get; set; }
+            public TreeInfo(int numberOfNodeVisited, int lastetVisitedNodeValue)
+            {
+                this.numberOfNodeVisited = numberOfNodeVisited;
+                this.lastetVisitedNodeValue = lastetVisitedNodeValue;
+            }
+        }
 
         public static class BSTOrders {
             public static List<int> InOrderTraverseRecursive(BST tree, List<int> array)
@@ -277,6 +287,57 @@ namespace ChallengeHackerRank.AlgoExpert
                 array.Reverse();
                 return array;
             }
+
+
+            public static int FindKthLargestValueInBst(BST tree, int k)
+            {
+                // Write your code here.
+
+                var arrRes = FindKthLargestValueInBstHelper(tree, new List<int>());
+                return arrRes[k - 1];
+            }
+            private static List<int> FindKthLargestValueInBstHelper(BST tree, List<int> arr)
+            {
+
+                if (tree == null) return arr;
+
+                var listResult = new List<int>();
+
+                var left = FindKthLargestValueInBstHelper(tree.left, arr);
+                var right = FindKthLargestValueInBstHelper(tree.right, arr);
+
+                listResult.AddRange(right);
+                listResult.Add(tree.value);
+                listResult.AddRange(left);
+
+                return listResult;
+            }
+
+
+            public static int FindKthLargestValueInBstBetterPerformance(BST tree, int k)
+            {
+                // Complexity O(H + k) | Space O(k)
+                var treeInfo = new TreeInfo(0, -1);
+                return ReverseInOderTraverse(tree, k, treeInfo);
+            }
+            private static int ReverseInOderTraverse(BST node, int k, TreeInfo treeInfo)
+            {
+                if (node == null || treeInfo.numberOfNodeVisited >= k)
+                    return treeInfo.lastetVisitedNodeValue;
+
+                ReverseInOderTraverse(node.right, k, treeInfo);
+                if (treeInfo.numberOfNodeVisited < k)
+                {
+                    treeInfo.numberOfNodeVisited += 1;
+                    treeInfo.lastetVisitedNodeValue = node.value;
+                    ReverseInOderTraverse(node.left, k, treeInfo);
+                }
+
+                return treeInfo.lastetVisitedNodeValue;
+
+            }
+
+
         }
 
 
@@ -314,6 +375,17 @@ namespace ChallengeHackerRank.AlgoExpert
             Console.WriteLine();
             Console.WriteLine($"-------------------------------------------");
 
+            Console.WriteLine($"FindKthLargestValueInBst - O(N)");
+            Console.WriteLine($"Expected: 14");
+            Console.WriteLine($"Result  : { BSTOrders.FindKthLargestValueInBst(root, 3) }");
+            Console.WriteLine($"-------------------------------------------");
+
+            Console.WriteLine($"FindKthLargestValueInBstBetterPerformance - O(h + k)");
+            Console.WriteLine($"Expected: 14");
+            Console.WriteLine($"Result  : { BSTOrders.FindKthLargestValueInBstBetterPerformance(root, 3) }");
+            Console.WriteLine($"-------------------------------------------");
+
+
 
             root.Insert(12);
             Console.WriteLine($"Expected: True");
@@ -349,7 +421,6 @@ namespace ChallengeHackerRank.AlgoExpert
             Console.WriteLine($"Expected: 4");
             Console.WriteLine($"Result: { tree.GetTreeHeight()}");
             Console.WriteLine($"-------------------------------------------");
-
 
         }
     }
