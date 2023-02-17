@@ -1,5 +1,6 @@
 ﻿using ChallengeHackerRank.AlgoExpert;
 using ChallengeHackerRank.DataStructure;
+using ChallengeHackerRank.GoogleChallenge;
 using ChallengeHackerRank.Graphs;
 //using ChallengeHackerRank.UberChallenge;
 
@@ -17,7 +18,7 @@ namespace ChallengeHackerRank
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
 
-            BinarySearchTree.Initial(args);
+            LogsInfoChallenge.Initial(args);
 
 
         }
