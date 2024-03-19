@@ -1,4 +1,5 @@
-﻿using ChallengeHackerRank.AlgoExpert;
+﻿using ChallengeHackerRank.AgileEngine;
+using ChallengeHackerRank.AlgoExpert;
 using ChallengeHackerRank.DataStructure;
 using ChallengeHackerRank.GoogleChallenge;
 using ChallengeHackerRank.Graphs;
@@ -17,8 +18,11 @@ namespace ChallengeHackerRank
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
+            
+            AgileEngineCaseOne.Initial(args);
+            //AgileEngineCaseTwo.Initial(args);
 
-            LogsInfoChallenge.Initial(args);
+            //LogsInfoChallenge.Initial(args);
 
 
         }
