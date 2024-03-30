@@ -19,7 +19,7 @@ namespace ChallengeHackerRank.LeetCode
 
             return sb.ToString();
         }
-
+            
         public static void Initial(string[] args)
         {
             string[] input = new string[] { "flower", "flow", "flight" };
