@@ -33,7 +33,6 @@ namespace ChallengeHackerRank.LeetCode
                 }
             }
             return result;
-
         }
 
         public static void Initial(string[] args)
