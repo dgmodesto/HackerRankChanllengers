@@ -3,6 +3,7 @@ using ChallengeHackerRank.AlgoExpert;
 using ChallengeHackerRank.DataStructure;
 using ChallengeHackerRank.GoogleChallenge;
 using ChallengeHackerRank.Graphs;
+using ChallengeHackerRank.HackerRank;
 using ChallengeHackerRank.LeetCode;
 //using ChallengeHackerRank.UberChallenge;
 
@@ -19,13 +20,13 @@ namespace ChallengeHackerRank
             //Tree.Tree.Initial(args);
             //Sorting.Sorting.Initial(args);
             //DepthFirstSearch.Initial(args);
-            
+
             //AgileEngineCaseOne.Initial(args);
             //AgileEngineCaseTwo.Initial(args);
 
             //LogsInfoChallenge.Initial(args);
 
-            ValidPairs.Initial(args);
+            StrangeCounter.Initial(args);
 
 
         }
