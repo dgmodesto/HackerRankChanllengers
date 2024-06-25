@@ -26,7 +26,7 @@ namespace ChallengeHackerRank
 
             //LogsInfoChallenge.Initial(args);
 
-            LarrysArray.Initial(args);
+            MathExpresionCalculate.Initial(args);
 
 
         }
