@@ -23,7 +23,7 @@ namespace ChallengeHackerRank
 
 
 
-            HandleWithNumberList.Initial(args);
+            NthNumber.Initial(args);
 
             //TreeSample.Initial(args);
 
